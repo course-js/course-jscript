@@ -1,0 +1,362 @@
+@font-face {
+	font-family: 'Aller_Lt';
+	src: url('../fonts/Aller_Lt.eot');
+	src: local('☺'), url('../fonts/Aller_Lt.woff') format('woff'), url('../fonts/Aller_Lt.ttf') format('truetype'), url('../fonts/Aller_Lt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aller_Bd';
+	src: url('../fonts/Aller_Bd.eot');
+	src: local('☺'), url('../fonts/Aller_Bd.woff') format('woff'), url('../fonts/Aller_Bd.ttf') format('truetype'), url('../fonts/Aller_Bd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	margin:0;
+	color: #555;
+	font: 20px/1.455 'Aller_Lt', Arial, sans-serif;
+	background: #fdfdfd; 
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	font-size: 30px;
+	font-family: 'Aller_Bd', Arial, sans-serif;
+	margin: 0 0 6px 0;
+}
+p{
+	margin: 0 0 31px 0;
+}
+section{
+    margin: 40px 0 50px;
+}
+
+.container{
+	width: auto;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+
+/********* HEADER ***********/
+header {
+	background: #3a3d40;
+	border-bottom: #4a4d50 5px solid;
+	text-align: left;
+}
+.logo{
+	display: inline-block;
+	margin-top: 32px;
+}
+.nav{
+	display: inline-block;
+	float: right;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	border-right: 1px solid #424547;
+	border-left: 1px solid #2d3032;
+
+	li{
+		display: inline-block;
+		a{
+			display: inline-block;
+			text-transform: uppercase;
+			color: #d4d4d4;
+			font-size: 12px;
+			font-family: 'Aller_Bd', Arial, sans-serif;
+			margin: 0;
+		    padding: 48px 19px 23px 21px;
+			border-left: 1px solid #424547;
+			border-right: 1px solid #2d3032;
+			
+			&:hover,
+			&.active{
+				background: #35373a;
+				color: #86acc4;
+			}
+		}
+	}
+}
+
+/********* MAIN ***********/
+#main{
+	border-top: 1px solid #000;
+	.separate-line{
+		background: url(../images/sep-line.png) repeat-x;
+		height: 3px;
+	}
+}
+
+/********* Gallery ***********/
+.gallery-holder{
+	position: relative;
+    margin: 50px 0 40px;	
+
+	.prev,
+	.next{
+		position: absolute;
+		top: 50%;
+		text-indent: -9999px;
+		overflow: hidden;
+		height: 35px;
+		width: 36px;
+		margin-top: -18px;
+		z-index: 3;
+	}
+	.prev{
+		background: url(../images/gallery-bg-btn-prev.png) no-repeat;
+		left: 20px;
+	}
+	.next{
+		background: url(../images/gallery-bg-btn-next.png) no-repeat;
+		right: 20px;
+	}
+	.gallery{
+		overflow: hidden;
+		width: 960px;
+		height: 450px;
+		position: relative;
+		z-index: 1;
+
+		ul{
+			padding: 0;
+			list-style: none;
+			margin: 0;
+			width: 9999px;
+		}
+		ul li{
+			float: left;
+			width: 960px; 
+			height: 450px;
+		}
+	}
+	.paging{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		z-index: 3;
+		height: 9px;
+
+		li{
+			display: inline-block;
+			padding: 0 2px;
+		}
+		a{
+			display: block;
+			overflow: hidden;
+			text-indent: -9999px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #fff;
+		}
+		a:hover,
+		.active a{
+			background: red;
+		}
+	}
+}
+
+
+/********* Services ***********/
+.services {
+	.tabset{
+		padding: 0;
+		list-style: none;
+		margin: 0 0 -1px;
+		text-align: center;
+		position: relative;
+		font-size: 0;
+
+		li{
+			display: inline-block;
+			border: 1px solid #c5c5c5;
+			border-width: 1px 1px 0 0;
+			line-height: 32px;
+
+			&:first-child{
+				border-width: 1px 1px 0;
+			}
+		}
+		a{
+			display: block;
+			padding: 0 26px;
+			color: #555;
+			font-size: 13px;
+			font-family: 'Aller_Bd', Arial, sans-serif;
+			background: #f8f8f8;
+
+			&:hover{
+				background: #fff;
+			}
+		}
+		.active a{
+			background: #fdfdfd;
+			color: #6b99b6;
+			padding-bottom: 1px;
+		}
+	}
+	.tab{
+		border-top: 1px solid #c5c5c5;
+		display: none;
+		text-align: left;
+
+		h3{
+			font-size: 17px;
+			text-align: left; 
+			font-family: 'Aller_Bd', Arial, sans-serif;
+			margin: 25px 0 0 0;
+		}
+		p{
+			font-size: 13px;
+			text-align: left; 
+			font-family: 'Droid Sans', arial;
+			margin: 9px 0 22px;
+			line-height: 22px;
+		}
+		ul{
+			margin: 0;
+			padding: 0 0 0 21px;
+			display: inline-block;
+		}
+		ul li{
+			position: relative;
+			list-style: none;
+			font-size: 13px;
+			text-align: left;
+			line-height: 22px;
+
+			&:after{
+				content: '';
+				position: absolute;
+				background: url(../images/tab-li.png) no-repeat;
+				width: 12px;
+				height: 9px;
+				left: -22px;
+				top: 7px;
+			}
+		}
+		&.active{
+			display: block;
+			overflow: hidden;
+		}
+		&.active img{
+			float: left;
+			margin: 30px 29px 0 0;
+		}
+	}
+}
+
+
+/********* Staff ***********/
+.staff{
+    margin: 40px 0 40px;
+    font-size: 0;	
+	
+	h2{
+		margin: 0 0 9px 0;
+	}
+	
+	p{
+		margin: 0 0 22px 0;
+		font-size: 20px;
+	}
+	
+	img{
+		margin: 4px;
+	}
+}
+
+/********* Customers ***********/
+.customers .customer-logo{
+	vertical-align: middle;
+	margin: 0 11px;
+}
+
+/********* FOOTER ***********/
+footer{
+	text-align: left;
+	section{
+		margin: 0;
+	}
+	.contact{
+		background: #3a3d40;
+		border-top: #2f3235 5px solid;
+		border-bottom: #24272a 1px solid;
+		padding: 34px 0;
+		h3{
+			color: #e3e3e3;
+			font-size: 14px;
+			font-family: 'Aller_Bd', Arial, sans-serif; 
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
+		}
+		p{
+			font-size: 13px;
+			font-family: 'Droid Sans', arial;
+			line-height: 22px;
+			margin: 10px 0 0 0;
+			padding-right: 10px;
+			color: #bfbfbf;
+		}
+		time{
+			font-size: 11px;
+			font-family: 'Droid Sans', arial;
+			color: #899096;
+			display: inline-block;
+			margin-bottom: 12px;			
+		}
+		.column{
+			width: 23%;
+			display: inline-block;
+			vertical-align: top;
+			padding-right: 10px;
+		}
+		.separate-line{
+			background: url(../images/sep-line-footer.png) repeat-x;
+			height: 3px;
+		}
+		.twit p{
+			text-indent: 27px;
+			position: relative;
+			margin-bottom: 13px;
+			a{
+				color: #86acc4;
+				&:hover{
+					color: #81cdfd;
+				}
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				background: url(../images/twit.png) no-repeat;
+				top: 4px;
+				left: 0;
+				width: 16px;
+				height: 12px;
+			}
+		}
+		.about p{
+			margin-bottom: 25px;
+		}
+	}
+	.social-link{
+		background: #2f3235;
+		padding: 20px 0;
+	}
+}

@@ -5,7 +5,6 @@ body {
 }
 
 #wrapper {
-	margin: 0;
 	padding: 84px 40px 40px;
 	width: 720px;
 	background-color: #314c5b;
@@ -16,7 +15,7 @@ body {
 }
 
 #wrapper>header {
-	margin: 0 0 76px 0;
+	margin: 0 0 76px;
 }
 
 #wrapper h1.logo {
@@ -33,16 +32,12 @@ body {
 	margin: 0 10px 0 0;
 }
 
-.graph, .calc, .calendar {
+#wrapper main>section {
 	float: left;
 }
 
-.notes, .statistics, .userData {
-	float: right;
-}
-
-.videoBlock, .mapBlock {
-	clear: both;
+#wrapper main>section:nth-of-type(3n+1) {
+	margin-right: 40px;
 }
 
 /* Style of the section graph*/
@@ -50,7 +45,7 @@ body {
 	background-color: #359a88;
 	width: 340px;
 	margin-bottom: 40px;
-	padding: 24px 0 0 0;
+	padding: 24px 0 0;
 }
 
 .graph header {
@@ -93,14 +88,8 @@ body {
 	
 }
 
-.graph div {
-	margin: 0;
-	padding: 0;
-}
-
 .graph div figure {
 	margin: 0;
-	padding: 0;
 }
 
 figure img {
@@ -122,6 +111,7 @@ figure img {
 
 .graph menu ul li {
 	display: inline-block;
+	margin: 0 4px;
 }
 
 .graph menu ul li a:link {
@@ -130,15 +120,15 @@ figure img {
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: 3px 10px;
-	margin: 0 4px;
+	
 }
 
 .graph menu ul li a:visited {
 	color: #277264;
 }
 
-.graph menu ul li a.selected:link,
-.graph menu ul li a.selected:visited  {
+.graph menu ul li.selected a:link,
+.graph menu ul li.selected a:visited  {
 	background-color: #3a9383;
 	border: none;
 	border-radius: 10px;
@@ -224,7 +214,6 @@ figure img {
 
 .notes section p {
 	margin: 0;
-	padding: 0;
 }
 
 .notes section .noti {
@@ -287,8 +276,8 @@ figure img {
 	background-color: #3894b2;
 }
 
-.notes section .paging li a.selected:link,
-.notes section .paging li a.selected:visited {
+.notes section .paging li.selected a:link,
+.notes section .paging li.selected a:visited {
 	box-sizing: border-box;
 	border: 2px solid #FFFFFF;
 }
@@ -328,8 +317,6 @@ figure img {
 }
 
 .notes footer table td.weather img{
-	margin: 0;
-	padding: 0;
 	vertical-align: middle;
 }
 
@@ -351,12 +338,10 @@ figure img {
 
 .videoBlock figure {
 	margin: 0;
-	padding: 0;
 }
 
 .videoBlock p {
 	margin: 0;
-	padding: 0;
 	font-size: 14px;
 	position: absolute;
 	bottom: 18px;
@@ -430,14 +415,14 @@ figure img {
 	font-size: 42px;
 }
 
-.calc section table {
+.calc .holder table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 	border: none;
 }
 
-.calc section table tbody tr td {
+.calc .holder table tbody tr td {
 	width: 84px;
 	height: 84px;
 	border: none;
@@ -445,12 +430,12 @@ figure img {
 	vertical-align: middle;
 }
 
-.calc section table tbody tr td:last-of-type {
+.calc .holder table tbody tr td:last-of-type {
 	width: 85px;
 }
 
-.calc section table td a:link,
-.calc section table td a:visited {
+.calc .holder table td a:link,
+.calc .holder table td a:visited {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
@@ -464,7 +449,7 @@ figure img {
 	
 }
 
-.calc section table tr a:after {
+.calc .holder table tr a:after {
 	content: "";
 	display: inline-block;
 	width: 1px;
@@ -473,50 +458,50 @@ figure img {
 	margin: 0 0 0 -5px;
 }
 
-.calc section table tr:first-of-type td a:link,
-.calc section table tr:first-of-type td a:visited {
+.calc .holder table tr:first-of-type td a:link,
+.calc .holder table tr:first-of-type td a:visited {
 	font-size: 30px;
 	background-color: #edb05a;
 }
 
-.calc section table tr td:last-of-type a:link,
-.calc section table tr td:last-of-type a:visited {
+.calc .holder table tr td:last-of-type a:link,
+.calc .holder table tr td:last-of-type a:visited {
 	background-color: #db7647;
 	font-size: 30px;
 	color: #FFFFFF;
 }
 
-.calc section table tr:last-of-type td:nth-of-type(2) a:link,
-.calc section table tr:last-of-type td:nth-of-type(2) a:visited {
+.calc .holder table tr:last-of-type td:nth-of-type(2) a:link,
+.calc .holder table tr:last-of-type td:nth-of-type(2) a:visited {
 	font-size: 42px;
 }
 
-.calc section table tr:last-of-type td:nth-of-type(1) a:link,
-.calc section table tr:last-of-type td:nth-of-type(1) a:visited {
+.calc .holder table tr:last-of-type td:nth-of-type(1) a:link,
+.calc .holder table tr:last-of-type td:nth-of-type(1) a:visited {
 	text-align: left;
 	padding-left: 35px;
 }
 
 /* borders of buttons*/
-.calc section table tr:nth-of-type(2) td,
-.calc section table tr:nth-of-type(4) td {
+.calc .holder table tr:nth-of-type(2) td,
+.calc .holder table tr:nth-of-type(4) td {
 	border-top: 1px solid #2b414d;
 	border-bottom: 1px solid #2b414d;
 }
 
-.calc section table tr td:nth-of-type(2) {
+.calc .holder table tr td:nth-of-type(2) {
 	border-left: 1px solid #2b414d;
 	border-right: 1px solid #2b414d;
 }
 
-.calc section table tr td:last-of-type {
+.calc .holder table tr td:last-of-type {
 	border-left: 1px solid #2b414d;
 }
 
-.calc section table tr:nth-of-type(4) td:nth-of-type(1) a:link,
-.calc section table tr:nth-of-type(4) td:nth-of-type(1) a:visited,
-.calc section table tr:nth-of-type(4) td:nth-of-type(3) a:link,
-.calc section table tr:nth-of-type(4) td:nth-of-type(3) a:visited {
+.calc .holder table tr:nth-of-type(4) td:nth-of-type(1) a:link,
+.calc .holder table tr:nth-of-type(4) td:nth-of-type(1) a:visited,
+.calc .holder table tr:nth-of-type(4) td:nth-of-type(3) a:link,
+.calc .holder table tr:nth-of-type(4) td:nth-of-type(3) a:visited {
 	background-color: #d2d5d5;
 }
 
@@ -531,7 +516,7 @@ figure img {
 }
 
 .statistics header {
-	margin: 0 0 21px 0;
+	margin: 0 0 21px;
 	padding: 0 5px;
 	overflow: hidden;
 }
@@ -554,7 +539,7 @@ figure img {
 }
 
 .statistics section {
-	margin: 0 0 33px 0;
+	margin: 0 0 33px;
 }
 
 .statistics section div.diagramm {
@@ -573,7 +558,7 @@ figure img {
 }
 
 .statistics section table.pageviews {
-	margin: 0 0 30px 0;
+	margin: 0 0 30px;
 }
 
 .statistics section table.pageviews tr:nth-of-type(1) td:nth-of-type(1) {
@@ -584,14 +569,14 @@ figure img {
 }
 
 .statistics section table.pageviews tr:nth-of-type(1) td:nth-of-type(2) {
-	padding: 0 0 4px 0;
+	padding: 0 0 4px;
 	font-size: 18px;
 	color: #f4b459;
 	vertical-align: bottom;
 }
 
 .statistics section table.pageviews tr:nth-of-type(2) td:nth-of-type(1) {
-	padding: 4px 0 0 0;
+	padding: 4px 0 0;
 	font-size: 18px;
 	color: #2b414d;
 	vertical-align: top;
@@ -792,7 +777,7 @@ aside #zoom #slider div {
 }
 
 .calendar header {
-	margin: 0 0 10px 0;
+	margin: 0 0 10px;
 	padding: 30px 0 28px;
 	position: relative;
 	border-bottom: 2px solid #22343e;
@@ -928,33 +913,55 @@ aside #zoom #slider div {
 .userData header {
 	margin-bottom: 23px;
 	padding-top: 31px;
-	overflow: hidden;
 	border-bottom: 1px solid #e4e7e7;
+	position: relative;
 }
 
 .userData header figure {
-	margin: 0 0 28px 0;
+	margin: 0 0 27px;
+}
+
+.userData header figure img {
+	float: left;
 	width: 172px;
 	height: 172px;
+	margin: 0 0 28px;
 	border: 4px solid #e4e7e7;
 	border-radius: 50%;
-	float: left;
 	overflow: hidden;
 }
 
+.userData header figure figcaption {
+	clear: both;
+	font-size: 18px;
+	color: #bf392b;
+	text-transform: capitalize;
+}
+
+.userData header figure figcaption a:link,
+.userData header figure figcaption a:visited {
+	font-size: 14px;
+	color: #ccd0d2;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 19px;
+}
+
+
 .userData header table {
 	width: 78px;
-	margin: 3px 0 0 0;
 	font-size: 12px;
 	border-collapse: collapse;
 	border-spacing: 0;
-	float: right;
+	position: absolute;
+	top: 33px;
+	right: 0;
 	text-align: left;
 }
 
 .userData header table th {
-	padding: 8px 0;
-	height: 23px;
+	padding: 7px 0;
+	height: 25px;
 	color: #465964;
 	text-transform: uppercase;
 	vertical-align: bottom;
@@ -964,34 +971,19 @@ aside #zoom #slider div {
 	color: #e48154;
 }
 
-.userData header p {
-	clear: both;
-	margin: 0 0 27px 0;
-	font-size: 18px;
-	color: #bf392b;
-	text-transform: capitalize;
-}
-
-.userData header p span {
-	font-size: 14px;
-	color: #ccd0d2;
-	text-transform: uppercase;
-	padding-left: 19px;
-}
-
 .userData section {
 	overflow: hidden;
 }
 
 .userData section p {
-	margin: 0 0 18px 0;
+	margin: 0 0 18px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #324d5b;
 }
 
 .userData section menu {
-	margin: 0 0 57px 0; 
+	margin: 0 0 57px; 
 	padding: 0;
 	float: left;
 }
@@ -1016,7 +1008,7 @@ aside #zoom #slider div {
 }
 
 .userData section menu+p {
-	margin: 0 26px 0 0;
+	margin: 0 26px 0;
 	font-size: 12px;
 	line-height: 1;
 	color: #cfd3d4;

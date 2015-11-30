@@ -1,0 +1,330 @@
+body {
+	margin: 0;
+	background: #fffbe3;
+	font: 11px/1.2 Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+	}
+	a:hover {
+		text-decoration: underline;
+}
+header {	
+	background: #0F4a41 url(../images/bg-header.png);
+	margin: 0;
+	padding: 50px 0 50px;
+	min-width: 980px;
+
+	}
+	header .header-box {
+		width: 980px;
+		margin: 0 auto;	
+		overflow: hidden;	
+		}
+		header .header-box .logo {
+			float: left;
+		}
+		header .header-box nav {
+			float: right;
+		}
+		header .header-box nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;	
+			display: inline-block;					
+			}
+			header .header-box nav li {
+				display: inline-block;
+			}
+			header .header-box nav li + li {
+				margin: 0 0 0 25px;
+				}
+				header .header-box nav li a {
+					text-decoration: none;
+					color: #fff;
+					font-weight: bold;
+					}
+					header .header-box nav li a.active, header .header-box nav li a:hover{
+						text-decoration: underline;
+						color: #ffc600;
+					}
+.wrapper {
+	width: 980px;	
+	margin: -15px auto 0;
+	}
+	.wrapper #main {
+		background: white;
+		display: block;	
+		overflow: hidden;
+		padding: 20px 15px 15px;
+		border: 1px solid gray;	
+		}
+		.wrapper #main .section-container{			
+			width: 637px;
+			float: left;
+			}
+			.wrapper #main h3 {
+				margin: 0 0 20px;
+				font-size: 20px;
+				line-height: 22px;
+				letter-spacing: -1px;
+			}
+			.wrapper #main .section-container .section-box {
+				padding: 5px;
+				border: 1px solid gray;
+				background: #fffbe3;
+				}
+				.wrapper #main .section-container .section-box section{
+					background: white;
+					border: 1px solid gray;
+					padding: 10px;
+				}
+				.wrapper #main .section-container .section-box section article{
+					background: white;
+					padding: 0 0 7px;
+					margin: 0 0 30px;
+					border-bottom: 1px solid gray;
+					overflow: hidden;
+					}
+					.wrapper #main .section-container .section-box section article .text-box{
+						font-size: 11px;
+						line-height: 20px;
+						width: 285px;
+						float: left;						
+						}
+						.wrapper #main .section-container .section-box section article .text-box h1{
+							border-bottom: 1px solid gray;
+							padding: 0 5px 20px;
+							font-size: 36px;
+							line-height: 38px;
+							margin: 0 0 15px;
+						}
+						.wrapper #main .section-container .section-box section article .text-box p{
+							margin: 0;
+							padding: 0 5px;
+						}
+					.wrapper #main .section-container .section-box section article .image-box{						
+						width: 279px;
+						float: right;						
+						}
+						.wrapper #main .section-container .section-box section article .image-box img{							
+							display: block;
+							padding: 5px;
+							margin: 0 0 5px;
+							border: 1px solid gray;
+						}
+						.wrapper #main .section-container .section-box section article .image-box a {
+							text-decoration: none;
+							font-size: 14px;
+							font-weight: bold;
+							padding: 9px 18px 9px;							
+							border: 1px solid gray;
+							background: #fffbe3;
+							color: black;
+							display: inline-block;
+						}
+						.wrapper #main .section-container .section-box section article .image-box a:hover{
+							background: lightgray;
+						}				
+						.wrapper #main .section-container .section-box ul {
+							list-style: none;
+							margin: -30px 0 0;
+							padding: 10px 0 0;
+							display: inline-block;
+							}
+							.wrapper #main .section-container .section-box li{
+								display: inline-block;
+								font-weight: bold;
+								font-size: 14px;
+								vertical-align: top;
+							}
+							.wrapper #main .section-container .section-box li + li {
+								margin: 0 0 0 10px;
+							}
+							.wrapper #main .section-container .section-box .pages a {
+								text-decoration: none;
+								background: #fffbe3;
+								padding:0 12px;
+								color: black;
+								border: 1px solid gray;
+								display: block;
+								line-height: 30px;
+							}
+							.wrapper #main .section-container .section-box a.active{
+								background: lightgray;
+							}
+							.wrapper #main .section-container .section-box a:hover{
+								background: lightgray;
+							}
+
+		.wrapper #main .aside-container{
+			width: 303px;
+			float: right;
+			}
+			.wrapper #main .aside-container .aside-box{
+				padding: 5px;
+				margin: 0 0 15px;
+				border: 1px solid gray;
+				background: #fffbe3;	
+				}
+				.wrapper #main .aside-container .aside-box aside {
+					background: white;
+					padding: 15px 10px;
+					border: 1px solid gray;
+					}
+					.wrapper #main .aside-container .aside-box aside :first-child.text{
+						border-bottom: 1px solid gray;
+						padding: 0 0 15px;
+						margin: 0 0 15px;
+					}
+					.wrapper #main .aside-container .aside-box aside blockquote {
+						background: #fff url(../images/q-text.png) no-repeat;
+						margin: 0;
+						display: block;
+						padding: 0 0 40px;
+						font-size: 11px;
+						line-height: 20px;
+					}
+					.wrapper #main .aside-container .aside-box aside q {
+						display: block;
+						margin: 0 0 15px;
+					}
+					.wrapper #main .aside-container .aside-box aside cite {
+						display: block;
+						text-align: right;
+						text-transform: uppercase;
+						font-weight: bold;
+						font-style: normal;
+					}
+			.wrapper #main .aside-container .button-box .button{
+				padding: 7px;
+				border: 1px solid gray;
+				background: #fffbe3;
+				display: block;
+				margin: 0 0 15px;			
+			}
+			.wrapper #main .aside-container .button-box img{				
+				border: 1px solid gray;
+				display: block;			
+			}
+	footer {
+		padding: 15px 20px 120px;
+		}
+		footer a.logo {
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: -1.5px;
+			}
+			footer .logo span{
+				font-weight: bold;
+			}
+		footer .copiright{
+			float: right;
+			line-height: 20px;
+
+			}
+			footer .copiright span{
+				text-align: right;
+				display: block;			
+			}
+/*Contact Form*/
+				
+.wrapper #main .section-container .section-box .text-box,
+.wrapper #main .section-container .section-box .form-box {
+	font-size: 11px;
+	line-height: 20px;
+	display: block;																	
+	}
+	.wrapper #main .section-container .section-box .entry{
+		margin: 0 0 20px;
+	}	
+	.wrapper #main .section-container .section-box .entry p{
+		margin: 0;
+		padding: 0 5px;
+		}
+		.wrapper #main .section-container .section-box .entry p strong{
+			text-transform: uppercase;
+			letter-spacing: -1px;
+		}
+	.wrapper #main .section-container .section-box .text-box h1{		
+		padding: 0 5px;
+		font-size: 36px;
+		line-height: 38px;
+		margin: 0 0 20px;
+		}
+	.wrapper #main .form-container {
+		border: 1px solid gray;
+		padding: 5px;
+		background: #fffbe3;
+		}
+		.wrapper #main .form-container .form-box {
+			border: 1px solid gray;
+			background: #fff;
+			padding: 15px 15px 10px;
+			}
+			.wrapper #main .form-container .form-box form {
+				border-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.wrapper #main .form-container .form-box fieldset {
+				border-style: none;
+				margin: 0;
+				padding: 0;
+				}
+				.wrapper #main .form-container .form-box fieldset .row {
+					overflow: hidden;
+					margin: 0 0 20px;
+				}
+				.wrapper #main .form-container .form-box fieldset label {
+					text-transform: uppercase;
+					font-weight: bold;
+					display: block;
+					width: 130px;
+					float: left;
+					margin: 0;
+					padding: 0;
+					line-height: 12px;
+					}
+					.wrapper #main .form-container .form-box fieldset label span {
+						text-transform: capitalize;
+						font-weight: normal;
+						display: block;
+						margin: 0;
+						padding: 5px 0 0;
+					}
+				.wrapper #main .form-container .form-box fieldset input {
+					width: 410px;
+					height: 22px;
+					line-height: 22px;
+				}
+				.wrapper #main .form-container .form-box fieldset textarea {
+					width: 410px;
+					border: 1px solid gray;
+				}
+				.wrapper #main .form-container .form-box fieldset input[type='submit'] {
+					font-weight: bold;
+					border: 1px solid gray;
+					font-size: 14px;					
+					padding: 5px 20px;
+					height: auto;
+					width: auto;
+					background: #fffbe3;
+					margin: -10px 0 0 130px;
+				}
+				.wrapper #main .form-container .form-box fieldset input[type='submit']:hover {
+				 	background: lightgray;
+				 }
+	.wrapper #main .aside-container .aside-box aside .aside-text{
+		padding: 0 0 15px;
+		margin: 0 0 15px;
+		border-bottom: 1px solid gray;
+	}			 
+	.wrapper #main .aside-container .aside-box aside .aside-text p{
+		font-size: 11px;
+		line-height: 20px;		
+		margin: 0;
+	}

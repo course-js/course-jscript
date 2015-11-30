@@ -357,7 +357,7 @@ a {
 #main table td > div:hover:after {
 	content: attr(data-reason);
 	display: block;
-	left: 100%;
+	left: 120%;
     width: 250%;
     padding: 5px 5px 9px;
     border-radius: 9px;
@@ -366,7 +366,7 @@ a {
 	z-index: 100;
 }
 #main table td:nth-child(n+20) > div:hover:after {
-	left: -250%;
+	left: -280%;
 }
 
 #main #link-list {

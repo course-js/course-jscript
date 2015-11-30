@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JS education</title>
+	<!-- <link media="all" rel="stylesheet" href="css/all.css"> -->
+	<style type="text/css">
+		.wrapper{
+			max-width: 860px;
+			margin: 0 auto;
+			background: #fafafa;
+			padding: 20px;
+			text-align: center;
+		}
+		ol li{
+			margin: 0 0 10px;
+		}
+		ol span{
+			display: inline-block;
+			background: #cca;
+			cursor: pointer;
+			padding: 2px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Lesson 8</h1>
+		<ol>
+			<li onclick='reverseSort()'><span>reverse Sort (5, 2, 1, -10, 300,100500, 8, -8)</span></li>
+		</ol>
+	</div>
+<script>
+		//1.Написать функцию, которая возвращает содержимое массива наоборот.
+		function reverseSort(){
+			var numbers = [5, 2, 1, -10, 300,100500, 8, -8];
+			numbers.reverse();
+			alert (numbers);
+		};
+
+</script>
+</body>
+</html>

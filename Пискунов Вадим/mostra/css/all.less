@@ -1,37 +1,69 @@
 @blue: #218cc8;
-@dark-blue: darken(@blue, 20%);
-@light-blue: lighten(@blue, 20%);
+@dark-blue: #125c87;
+@light-blue: #dfedf5;
 @gray: #ededed;
 @dark-gray: darken(@gray, 20%);
 @text-blue: #136392;
 @height: 30px;
 body {margin: 0;
-padding-top: 20px}
+padding-top: 20px;
+font-family: arial;}
 
 #wrapper {
-	width: 80%;
+	width: 960px;
 	margin: 0 auto;
 	background: white;
 		header {
-			overflow: hidden;
-			.logo {
-				float: left;
-				margin-bottom: 14px;
-			}
-			span {
-				color: grey;
-				float: right;
-				text-align: right;
-			}
-			strong {
-				color: #87ac75;
-				float: right;
-				text-align: right;
-			}
+				.header-row {
+					overflow: hidden;
+					margin-bottom: 30px;
+					.logo {
+						width: 240px;
+						float: left;
+						position: relative;
+							img {
+								position: absolute;
+								left:125px;
+								top: 0px;
+						}
+						a {
+							display: block;
+							text-decoration: none;
+							color: green;
+							font-size: 50px;
+								span {
+									color: @dark-blue;
+									margin: 0 -10px;
+								}
+								p {
+									color: green;
+									margin: 0 10px;
+								}
+						}
+					}
+					.box {
+						width: 300px;
+						float: right;
+						text-align: right;
+						margin: 0;
+						height: 58px;
+							p {
+								padding-top: 20px;
+								margin: 0;
+								color: gray;
+							}
+							a {
+								text-decoration: none;
+								color: green;
+
+							}
+					}
+				}
 		}
 		nav {
 			background: white;
-			margin-bottom: 10px;
+			overflow: hidden;
+			padding: 0 0 10px 0;
 				ul {
 					margin: 0;
 					padding-left: 0;
@@ -40,41 +72,40 @@ padding-top: 20px}
 						li {
 							float: left;
 							width: 100%/8;
+							height: 48px;
 							background: @blue;
 							a {
 								display: block;
 								text-decoration: none;
 								color: white;
+								height: 100%;
 								text-align: center;
-								line-height: 200%;
 								position: relative;
+								line-height: 300%;
 									&:hover {
 										background: @dark-blue;
 									}
-									img {
-										display: inline-block;
-										padding: 3px;
-										border-radius: 3px;
-										background: @light-blue;
-										margin: 5px;
 
-									}
-							}
-							.half-button {
-								float: left;
-								text-decoration: none;
-								color: white;
-								text-align: left;
-								width: 50%;
-								height: 32px;
-									&:first-child {
-										text-align: right;
-									}
-									&:hover {
-										background: @blue;
-									}
 							}
 							}
+								.social {
+									li {
+										float: left;
+										width: 50%;
+											a {
+													img {
+														display: inline-block;
+														padding: 3px;
+														border-radius: 3px;
+														background: @light-blue;
+														margin: 20%;
+													}
+												&:hover {
+													background: inherit;
+												}
+											}
+									}
+								}
 						}
 						.home {
 							background: @dark-blue;
@@ -93,12 +124,50 @@ padding-top: 20px}
 			width: 100%;
 			height: 100%;
 			padding-bottom: 10px;
-		}
-		.box {
+			position: relative;
 			overflow: hidden;
-			height: 3%;
+				.banner-text {
+					width: 50%;
+					text-align: right;
+					position: absolute;
+					top: 20px;
+					right: 10px;
+						strong {
+							font-size: 35px;
+							color: #5390b4;
+						}
+						span {
+							font-size: 18px;
+							color: #5390b4;
+						}
+						a {
+							float: right;
+							text-align: center;
+							text-decoration: none;
+							display: block;
+							width: 150px;
+							height: 40px;
+							background: #f28221;
+							font-weight: bold;
+							font-size: 16px;
+							color: white;
+								&:hover {
+									color: @dark-blue;
+									box-shadow: 0 0 10px black;
+								}
+								&:after {
+									content: "";
+									display: inline-block;
+									vertical-align: middle;
+									height: 100%;
+								}
+						}
+				}
+		}
+		.menu {
+			overflow: hidden;
 			margin-bottom: 10px;
-				.left-box {
+				.menu-option {
 					width: 60%;
 					float: left;
 						.textual-left-box {
@@ -140,7 +209,7 @@ padding-top: 20px}
 								}
 						}
 				}
-				.right-box {
+				.menu-search {
 					float: right;
 					width: 39%;
 					.search-box {
@@ -210,12 +279,10 @@ padding-top: 20px}
 										width: 100%;
 											.preview {
 												display: block;
-												width: 288px;
-												height: 288px;
+												width: 96%;
+												height: 100%;
 												padding: 5px;
 												background: @light-blue;
-												border: 1px solid;
-												border-color: #637f51;
 											}
 									}
 							}
@@ -368,7 +435,7 @@ padding-top: 20px}
 											display: block;
 											height: 100%;
 											width: 100%;
-											background: lighten(@light-blue, 20%);
+											background: @light-blue;
 											text-decoration: none;
 											color: @dark-blue;
 											padding: 5px;
@@ -407,7 +474,7 @@ padding-top: 20px}
 						font-weight: bold;
 						margin-bottom: 20px;
 							input {
-								background: lighten(@light-blue, 20%);
+								background: @light-blue;
 								border: none;
 								padding: 10px 0 10px 0;
 							}
@@ -435,7 +502,7 @@ padding-top: 20px}
 								width: 100%;
 									textarea {
 										border:none;
-										background: lighten(@light-blue, 20%) ;
+										background: @light-blue;
 										width: 100%;
 										height: @height*10;
 										padding: 10px 0 10px 0;

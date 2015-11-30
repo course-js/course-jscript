@@ -7,76 +7,77 @@
 </head>
 <body>
 	<div id="wrapper">
-		
 		<header>
 			<h1 id="logo">
-				<img src="image/shape-4-35_15.png">
-				<span><mark>me</mark>mostra</span>
+				<P>
+					<a href="#null">
+						<img src="image/new_shape.png">
+						<mark>me</mark>mostra
+					</a>
+				</p>
 			</h1>
 			
 			<p id="additional_inform">
 				<span>For Additional Information, Contact Us!<br />
-					<mark>info@memostra.com</mark>
-				</span>
+					<a href="#null">info@memostra.com</a></span>
 			</p>
 		</header>
 		
 		<nav>
 			<ul>
-				<li class="nav">
-					<a href="#">Home</a>
+				<li class="nav_item">
+					<a href="#null" class="link_active">Home</a>
 				</li>
-				<li class="nav">
-					<a href="#">About</a>
+				<li class="nav_item">
+					<a href="#null">About</a>
 				</li>
-				<li class="nav">
-					<a href="#">Chothing</a>
+				<li class="nav_item">
+					<a href="#null">Chothing</a>
 				</li>
-				<li class="nav">
-					<a href="#">Shoes</a>
+				<li class="nav_item"> 
+					<a href="#null">Shoes</a>
 				</li>
-				<li class="nav">
-					<a href="#">Electronics</a>
+				<li class="nav_item">
+					<a href="#null">Electronics</a>
 				</li>
-				<li class="nav">
-					<a href="#">Perfumes</a>
+				<li class="nav_item">
+					<a href="#null">Perfumes</a>
 				</li>
-				<li class="nav">
-					<a href="#">Contact Us</a>
+				<li class="nav_item">
+					<a href="#null">Contact Us</a>
+				</li>
+				<li id="social_items">	
+					<a id="mail_button" href="#null"></a>
+					<a id="facebook_button" href="#null"></a>
 				</li>
 			</ul>
-			<span id="social_button">	
-				<a href="#"><img src="image/mail.png" /></a>
-				<a href="#"><img src="image/facebook.png" /></a>
-			</span>
 		</nav>
 
 		<div id="main">
 			<header id="main_header">
-				<img src="image/image.png">
 				<hgroup>
 					<h1>Welcome to Mostra!</h1>
 					<h4>Quality Products - Great Prices!</h4>
 					<br />
 					<br />
-					<h5><a href="#">Check it Out!</a></h5>
+					<h5><a href="#null">Check it Out!</a></h5>
 				</hgroup>
 			</header>
 			
 			<menu>
 				<ul>
 					<li>
-						<a class="kategories" href="#">All Categories</a>
+						<a class="kategories" href="#null">All Categories</a>
 					</li>
 					<li>
-						<a class="kategories" href="#">Men</a>
+						<a class="kategories" href="#null">Men</a>
 					</li>
 					<li>
-						<a class="kategories" href="#">Women</a>
+						<a class="kategories" href="#null">Women</a>
 					</li>
 				</ul>
 				<form>
-					<input name="search" type="search">
+					<input name="search" type="search" required="required" placeholder="Browse Product">
 					<input name="submit" type="submit" value="Search">
 				</form>
 			</menu>
@@ -85,14 +86,14 @@
 				<ul>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Abercrombie & Fitch<br /><img src="image/AE001.png" /></a>
+							Abercrombie & Fitch<br /><img src="image/AE001.png" />
 						</h5>
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
 						<span class="code">COD: <mark class="group_2">AE001</mark></span>
 					</li>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Hollister<br /><img src="image/HO001.png" /></a>
+							Hollister<br /><img src="image/HO001.png" />
 						</h5>
 						
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
@@ -100,7 +101,7 @@
 					</li>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Hollister<br /><img src="image/HO002_orange.png" /></a>
+							Hollister<br /><img src="image/HO002_orange.png" />
 						</h5>
 						
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
@@ -112,7 +113,7 @@
 				<ul>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Abercrombie & Fitch<br /><img src="image/AE002.png" /></a>
+							Abercrombie & Fitch<br /><img src="image/AE002.png" />
 						</h5>
 						
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
@@ -120,7 +121,7 @@
 					</li>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Raiph Lauren<br /><img src="image/RA001.png" /></a>
+							Raiph Lauren<br /><img src="image/RA001.png" />
 						</h5>
 						
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
@@ -128,7 +129,7 @@
 					</li>
 					<li class="t-shirts">
 						<h5>
-							<a href="#">Raiph Lauren<br /><img src="image/HO002.png" /></a>
+							Raiph Lauren<br /><img src="image/HO002.png" />
 						</h5>
 						
 						<span class="price">Price: <mark class="group_1">US $65</mark></span>
@@ -137,35 +138,40 @@
 				</ul>
 			</section>
 			
-			<footer id="main_footer">
-				
-				<ul id="navigation">	
-					<li id="previous">
-						<a href="#">Previous</a>
-					</li>
-					<li id="number_page">
-						<a href="index.html">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-					</li>
-					<li id="next">
-						<a href="#">Next</a>
-					</li>
-				</ul>
-				
+			<footer id="pagination">
+				<div id="back">	
+					<a href="#null" class="first_page">&laquo; Previous</a>
+				</div>
+				<div id="number_page">
+					<ul>
+						<li>
+							<a class="link_active" href="index.html">1</a>
+						</li>
+						<li>
+							<a href="#null">2</a>
+						</li>
+						<li>
+							<a href="#null">3</a>
+						</li>
+					</ul>
+				</div>
+				<div id="move">
+					<a href="#null">Next &raquo;</a>
+				</div>
 			</footer>
 		</div>
 
 		<footer>
-			<span>Copyright &copy2010 Me Mostra. All Right Reserved.<br />
-				  Website Designed and Developed by <mark>HOG_87</mark>
-			</span>
-			<span id="footer_nav">
-				<a href="#">Home</a>
-				<a href="#">About Amostras</a>
-				<a href="#">Products</a>
-				<a href="#">Contact Us</a>
-			</span>	
+			<P>
+				Copyright &copy2010 Me Mostra. All Right Reserved.<br />
+				  Website Designed and Developed by <a title="Learn more about the author" href="#null">HOG_87</a>
+			</p>
+			<ul id="footer_nav">
+				<li><a href="#null">Home</a></li>
+				<li><a href="#null">About Amostras</a></li>
+				<li><a href="#null">Products</a></li>
+				<li><a href="#null">Contact Us</a></li>
+			</ul>	
 			
 		</footer>
 	</div>

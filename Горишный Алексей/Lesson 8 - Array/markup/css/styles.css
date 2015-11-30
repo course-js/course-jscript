@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	color: #000;
+	font: 11px/1.455 Arial, Helvetica, sans-serif;
+	background: #f4f4f4; 
+}
+
+.wrapper{
+	width: 641px;
+	margin: 0 auto;
+}
+
+h2{
+	text-align: center;
+	background: #c8c8c8;
+}
+
+.answer{
+	color: green;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.image{
+	text-align: center;
+}
+
+.matrix p{
+	margin: 0;
+	padding: 0;
+}
